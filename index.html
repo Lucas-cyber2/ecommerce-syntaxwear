@@ -4,18 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxWear - Ecommerce</title>
+    <title>SyntaxWear - Tênis e Sneakers Online</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/components/header.css">
 
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="header">
         <!-- Cabeçalho: logo, navegação, etc. -->
-         <h1>Título</h1>
+        <h1 class="logo">
+            <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+                <img src="./assets/img/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+            </a>
+        </h1>
+
+        <nav class="nav-center" aria-label="Categorias Principais">
+            <ul>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+        <!-- Novo menu lateral -->
+        <nav class="nav-right" aria-label="Menu Lateral">
+            <ul>
+                <li><a href="#">Nossas lojas</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#" title="Minha Conta"><img src="./assets/img/icons/user.svg" alt="Minha Conta"></a></li>
+                <li><a href="#" title="Ajuda"><img src="./assets/img/icons/help.svg" alt="Ajuda"></a></li>
+                <li><a href="#" title="Carrinho"><img src="./assets/img/icons/bag.svg" alt="Carrinho"></a></li>
+            </ul>
+        </nav>
+
     </header>
     <main class="site-main">
         <section id="hero" class="hero-section">
