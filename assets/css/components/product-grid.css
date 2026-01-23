@@ -9,33 +9,37 @@
 .highlight {
     grid-area: highlight;
     background-image: url(../../img/products/modelo-masculino.jpg);
-    
+
 
 }
-.sneaker-purple{
+
+.sneaker-purple {
     grid-area: sneaker-purple;
-     background-image: url(../../img/products/roxo-verde-grid.jpg);
-    
+    background-image: url(../../img/products/roxo-verde-grid.jpg);
+
 
 }
+
 .model {
-       background-image: url(../../img/products/modelo-feminino.jpg);
+    background-image: url(../../img/products/modelo-feminino.jpg);
     grid-area: model;
 }
-.sneaker-color{
+
+.sneaker-color {
     background-image: url(../../img/products/futurista-grid.jpg);
     grid-area: sneaker-color;
 }
 
 .sneaker-white {
-     background-image: url(../../img/products/preto-azul-grid.jpg);
+    background-image: url(../../img/products/preto-azul-grid.jpg);
     grid-area: sneaker-white;
 }
 
-.sneaker-silver{
+.sneaker-silver {
     grid-area: sneaker-silver;
     background-image: url(../../img/products/moderno-grid.jpg);
 }
+
 .grid-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -48,26 +52,26 @@
 
 }
 
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
+    transform: translate(-50%, -50%);
+    text-align: center;
 
 }
 
-.card-title{
-    color:#EDEDED;
+.card-title {
+    color: #EDEDED;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
 
 }
 
-.card-subtitle{
-    color:#EDEDED;
-    font-size: 1,5rem;
+.card-subtitle {
+    color: #EDEDED;
+    font-size: 1, 5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -75,4 +79,38 @@
 .cta-group {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
+            max-width: 100%;
+            gap: 0.625rem;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .model {
+        min-height: 370px;
+    }
+
+    .sneaker-white {
+        min-height: 190px;
+
+    }
+
+    .sneaker-purple,
+    .sneaker-purple {
+        min-height: 190px;
+    }
 }
